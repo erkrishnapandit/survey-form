@@ -9,8 +9,131 @@
 </head>
 
 <body>
+    <div class="form-container">
+        <h2 id="main-heading">Survey Form</h2>
+        <p id="para-one">Feel Free To Answer The Question Based On Your Own Experience And Opinion. If You Are Not
+            Convinient In Answering Any Particular Question Please Skip It By Answering "No". Every Answer Would Be Very
+            Appriciated. Thank You For Your Time. </p>
+        <form action="">
+            <div id="div-1">
+                <div>
+                    <label for="name">Your name</label>
+                    <br />
+                    <input type="text">
+                </div>
+                <br />
+
+                <div>
+                    <label for="email">Your Email Address</label>
+                    <br />
+                    <input type="email">
+                </div>
+                <br />
+
+                <div>
+                    <label for="phone">Your Phone Number</label>
+                    <br />
+                    <input type="number">
+                </div>
+                <br />
+
+                <div>
+                    <label for="address">Where Do You Live</label>
+                    <br />
+                    <select name="address" id="address">
+                        <option value="select">Select</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="hydrabad">Hydrabad</option>
+                        <option value="pune">Pune</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <fieldset>
+                        <legend>Age</legend>
+                        <div>
+                            <input type="radio" name="range" value="15-20" />
+                            <label for="range1">15-20</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="range" value="20-30" />
+                            <label for="range2">20-30</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="range" value="30-40" />
+                            <label for="range3">30-40</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="range" value="40-50" />
+                            <label for="range4">40-50</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="range" value="No" />
+                            <label for="NA">Prefer Not To Say</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <label for="proficiency">How would you rate your proficiency in coding</label>
+                    <div>
+                        <input type="radio" name="proficiency" value="beginner" />
+                        <label for="beginner">Beginner</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="proficiency" value="Intermediate" />
+                        <label for="Intermediate">Intermediate</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="proficiency" value="Advance" />
+                        <label for="Advance">Advance</label>
+                    </div>
+                </div>
+            </div>
 
 
+            <div id="div-2">
+                <div>
+                    <label for="condingContest">Have you ever applied in any coding contest</label>
+                    <div>
+                        <input type="radio" name="codingContest" id="applied">
+                        <label for="Yes">Yes</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="codingContest" id="applied">
+                        <label for="No">No</label>
+                    </div>
+                    <div>
+                        <label for="coding">Discuss whar drives your passion for coding and outline your aspiration in the field.</label>
+                        <br>
+                        <textarea name="coding" id="coding" rows="5" cols="50"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="coding">What are some challenges you have faced while coding?</label>
+                        <br>
+                        <textarea name="coding" id="coding" rows="5" cols="50"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="coding">Please list the Data Structure you have a strong understing of.</label>
+                        <br>
+                        <textarea name="coding" id="coding" rows="5" cols="50"></textarea>
+                    </div>
+                </div>
+                <button type="submit"> Submit Form</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
