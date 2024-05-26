@@ -14,26 +14,26 @@
         <p id="para-one">Feel Free To Answer The Question Based On Your Own Experience And Opinion. If You Are Not
             Convinient In Answering Any Particular Question Please Skip It By Answering "No". Every Answer Would Be Very
             Appriciated. Thank You For Your Time. </p>
-        <form action="">
+        <form action=""  method="get">
             <div id="div-1">
                 <div>
                     <label for="name">Your name</label>
                     <br />
-                    <input type="text">
+                    <input class="text-input" type="text" placeholder="Enter your name">
                 </div>
                 <br />
 
                 <div>
-                    <label for="email">Your Email Address</label>
+                    <label for="email" >Your Email Address</label>
                     <br />
-                    <input type="email">
+                    <input class="text-input" type="email" placeholder="user@user.com">
                 </div>
                 <br />
 
                 <div>
                     <label for="phone">Your Phone Number</label>
                     <br />
-                    <input type="number">
+                    <input class="text-input" type="number" placeholder="9999999999">
                 </div>
                 <br />
 
@@ -41,8 +41,8 @@
                     <label for="address">Where Do You Live</label>
                     <br />
                     <select name="address" id="address">
-                        <option value="select">Select</option>
-                        <option value="delhi">Delhi</option>
+                        <option value="select" selected>Select</option>
+                        <option value="delhi" >Delhi</option>
                         <option value="mumbai">Mumbai</option>
                         <option value="hydrabad">Hydrabad</option>
                         <option value="pune">Pune</option>
@@ -115,22 +115,22 @@
                     <div>
                         <label for="coding">Discuss whar drives your passion for coding and outline your aspiration in the field.</label>
                         <br>
-                        <textarea name="coding" id="coding" rows="5" cols="50"></textarea>
+                        <textarea name="coding" id="coding" rows="4" cols="50"></textarea>
                     </div>
 
                     <div>
                         <label for="coding">What are some challenges you have faced while coding?</label>
                         <br>
-                        <textarea name="coding" id="coding" rows="5" cols="50"></textarea>
+                        <textarea name="coding" id="coding" rows="4" cols="50"></textarea>
                     </div>
 
                     <div>
                         <label for="coding">Please list the Data Structure you have a strong understing of.</label>
                         <br>
-                        <textarea name="coding" id="coding" rows="5" cols="50"></textarea>
+                        <textarea name="coding" id="coding" rows="4" cols="50"></textarea>
                     </div>
                 </div>
-                <button type="submit"> Submit Form</button>
+                <button id="submit-btn" type="submit"> Submit Form</button>
             </div>
         </form>
     </div>
