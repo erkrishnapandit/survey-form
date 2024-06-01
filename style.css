@@ -1,23 +1,30 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: rgb(120, 250, 220);
     font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
-
+h2{
+    color: green;
+}
 p{
     font-size: small;
 }
 .form-container{
+    display: flex;
+    flex-direction: column;
     border: none;
-    border-radius: 8px;
-    padding: 20px;
-    width: 80%;
-    height: 85vh;
-    margin: auto;
-    margin-top: 20px;
+    border-radius: .8em;
+    padding: .4em;
+    width: 90vw;
+    height: 90vh;
     background-color: white;
 }
 
@@ -26,39 +33,41 @@ form{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    
 }
 
 input[type=text] {
-    width: 350px;
-    height: 12px;
+    width: 90%;
+    height: 30px;
     padding: 4px; 
 }
 
 input[type=email] {
-    width: 350px;
-    height: 12px;
+    width: 90%;
+    height: 30px;
     padding: 4px; 
 }
 
 input[type=number] {
-    width: 350px;
-    height: 12px;
+    width: 90%;
+    height: 30px;
     padding: 4px; 
 }
 
 #div-1{
-    min-width: 45%;
+    width: 45%;
     height: 70vh;
+    margin: 10px;
 }
 
 #div-2{
     width: 45%;
     height: 70vh;
+    margin: 10px;
 }
 
 select{
-    width: 360px;
+    width: 90%;
     height: 30px;
     padding: 4px;
 }
@@ -67,7 +76,7 @@ fieldset{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 350px;
+    width: 90%;
     height: 80px;
     padding: 8px;
     justify-content: flex-start;
@@ -76,11 +85,16 @@ fieldset{
 button{
     height: 30px;
     width: 100%;
-    margin: 10px 0;
+    margin: 10px;
     color: white;
     background-color: rgb(21, 195, 5);
     border-radius: 5px;
     border: none;
+}
+textarea{
+    height: 50px;
+    width: 80%;
+    margin: 5px 0;
 }
 
 ::placeholder{
